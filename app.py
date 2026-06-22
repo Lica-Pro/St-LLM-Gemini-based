@@ -10,9 +10,9 @@ if "user_messages" not in state:
 with st.sidebar:
   st.title("Type your API key to start")
   st.write("You can get those in https://aistudio.google.com/app/api-keys")
-api_key = st.text_input("Type here")
-submit = st.button("Submit")
-model = st.selectbox(
-  "Select a model"
-  options=['gemini-2.5-pro', 'gemini-3.1-flash', 'gemini-2.5-flash', 'gemini-3.1-flash-lite', 'gemini-2.5-flash-lite']
-)
+  api_key = st.text_input("Type here")
+  submit = st.button("Submit")
+  model = st.selectbox(
+    "Select a model"
+    options=['gemini-2.5-pro', 'gemini-3.1-flash', 'gemini-2.5-flash', 'gemini-3.1-flash-lite', 'gemini-2.5-flash-lite']
+  )
