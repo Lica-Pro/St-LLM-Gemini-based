@@ -13,6 +13,9 @@ with st.sidebar:
   api_key = st.text_input("Type here")
   submit = st.button("Submit")
   model = st.selectbox(
-    "Select a model"
+    "Select a model",
     options=['gemini-2.5-pro', 'gemini-3.1-flash', 'gemini-2.5-flash', 'gemini-3.1-flash-lite', 'gemini-2.5-flash-lite']
   )
+  if api_key:
+    if submit:
+      st.success("Now you can close this sidebar to chat!")
